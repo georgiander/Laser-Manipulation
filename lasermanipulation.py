@@ -229,4 +229,8 @@ def GaussianMask(x0, y0, xsize=10, ysize=10, sigma=10, maskType ='contour'):
    
     plt.show()
 
-GaussianMask(0, 0, maskType='gradient')
+init = cv2.imread(r'C:\Users\HP\Downloads\Laser Manipulation\laser1080.jpg', 0)
+four = cv2.imread(r'C:\Users\HP\Downloads\Laser Manipulation\Target_Images\giraffe.jpg', 0)
+
+GSplot(init, four, 50)
+
